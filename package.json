@@ -1,0 +1,27 @@
+{
+  "name": "vcalc",
+  "version": "0.1.0",
+  "description": "Sass function for calculate unit from px to vw or vmin.",
+  "main": "index..scss",
+  "style": "index..scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vwxyutarooo/vcalc.git"
+  },
+  "keywords": [
+    "sass",
+    "function",
+    "vw",
+    "vmin",
+    "viewport"
+  ],
+  "author": "vwxyutaroooo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vwxyutarooo/vcalc/issues"
+  },
+  "homepage": "https://github.com/vwxyutarooo/vcalc#readme"
+}
