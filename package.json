@@ -2,8 +2,8 @@
   "name": "vcalc",
   "version": "0.1.1",
   "description": "Sass function for calculate unit from px to vw or vmin.",
-  "main": "index..scss",
-  "style": "index..scss",
+  "main": "index.scss",
+  "style": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
