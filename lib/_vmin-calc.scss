@@ -12,7 +12,7 @@
   }
 
   @for $i from 1 through $count {
-    $vmin-values: append($vmin-values, -zf-to-vw(nth($values, $i), $base));
+    $vmin-values: append($vmin-values, -zf-to-vmin(nth($values, $i), $base));
   }
 
   @return $vmin-values;
