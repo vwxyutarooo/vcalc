@@ -8,25 +8,12 @@
   $count: length($values);
 
   @if $count == 1 {
-    @return -zf-to-vw($values, $base);
+    @return -switch-unit($values, $base, 1vw);
   }
 
   @for $i from 1 through $count {
-    $vw-values: append($vw-values, -zf-to-vw(nth($values, $i), $base));
+    $vw-values: append($vw-values, -switch-unit(nth($values, $i), $base, 1vw));
   }
 
   @return $vw-values;
-}
-
-@function -zf-to-vw($value, $base) {
-  @if type-of($value) != 'number' {
-    @warn inspect($value) + ' was passed to vw-calc(), which is not a number.';
-    @return $value;
-  }
-
-  @if unit($value) != 'vw' {
-    $value: (strip-unit($value) / strip-unit($base) * 100) * 1vw;
-  }
-
-  @return $value;
 }
